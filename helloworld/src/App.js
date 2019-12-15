@@ -1,24 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Exam from './component/FunctionalComponent'
+import Welcome from './component/ClassComponent'
+import CheckShortForm from './component/CheckShortForm'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World !!!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learning React
-        </a>
-      </header>
+      <Exam name="Kannan"  roll="609013" />
+      <Welcome name="Kannan"  roll="609013"/>
+      <CheckShortForm></CheckShortForm>
     </div>
   );
 }
